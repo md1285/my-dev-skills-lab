@@ -1,0 +1,57 @@
+body {
+display: grid;
+height: 100vh;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+    ". . ."
+    ". main ."
+    ". . ."
+}
+
+header {
+    background-color: #90C17B;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 500px;
+    grid-area: header;
+    text-align: center;
+}
+
+h4 {
+    color: #FFB24C;
+}
+
+td button {
+    background-color: #E06667;
+    color: white;
+}
+
+h4 {
+    font-size: 16px;
+    text-align: left;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer input {
+    border: 2px solid #90C17B;
+    width: 75%;
+}
+
+footer button {
+    border: 2px solid #90C17B;
+    background-color: white;
+    color: #90C17B;
+    width: 24%;
+}
+
+td:first-child {
+    width: 10%;
+}
+
